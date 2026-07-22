@@ -4,51 +4,45 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>Softra | تجربة طعام فاخرة</title>
-
 <!-- SEO & Meta Tags -->
 <meta name="description" content="Softra - مطعم تركي فاخر يقدم أطباق تركية أصيلة في سويسرا والمملكة العربية السعودية. حجز طاولات وطلب أونلاين." />
 <meta name="keywords" content="Softra, مطعم تركي, kebab, Turkish restaurant, Suisse, Riyadh, fine dining" />
 <meta name="author" content="Softra Restaurant" />
 <link rel="canonical" href="https://softra.ch" />
-
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="restaurant" />
 <meta property="og:url" content="https://softra.ch" />
 <meta property="og:title" content="Softra | Fine Turkish Dining" />
 <meta property="og:description" content="تجربة طعام تركية فاخرة حيث يلتقي التقليد الأصيل بالأناقة المعاصرة." />
 <meta property="og:image" content="https://i.ibb.co/kNcTJgt/Whats-App-Image-2026-07-04-at-6-58-45-PM.jpg" />
-
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://softra.ch" />
 <meta property="twitter:title" content="Softra | Fine Turkish Dining" />
 <meta property="twitter:description" content="تجربة طعام تركية فاخرة حيث يلتقي التقليد الأصيل بالأناقة المعاصرة." />
 <meta property="twitter:image" content="https://i.ibb.co/kNcTJgt/Whats-App-Image-2026-07-04-at-6-58-45-PM.jpg" />
-
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Softra",
-  "servesCuisine": "Turkish",
-  "priceRange": "$$",
-  "telephone": "+41 923 18 00",
-  "openingHours": "Mo-Su 12:00-00:00",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "شارع الملك فهد",
-    "addressLocality": "Riyadh",
-    "addressCountry": "SA"
-  },
-  "image": "https://i.ibb.co/kNcTJgt/Whats-App-Image-2026-07-04-at-6-58-45-PM.jpg"
+"@context": "https://schema.org",
+"@type": "Restaurant",
+"name": "Softra",
+"servesCuisine": "Turkish",
+"priceRange": "$$",
+"telephone": "+41 923 18 00",
+"openingHours": "Mo-Su 12:00-00:00",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "شارع الملك فهد",
+"addressLocality": "Riyadh",
+"addressCountry": "SA"
+},
+"image": "https://i.ibb.co/kNcTJgt/Whats-App-Image-2026-07-04-at-6-58-45-PM.jpg"
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Tajawal:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
 <style>
 /* ============================================================
 ROOT VARIABLES
@@ -105,7 +99,6 @@ overflow-x: hidden;
 transition: background-color 0.6s ease, color 0.6s ease;
 }
 [dir="rtl"] body { font-family: 'Tajawal', 'Inter', sans-serif; }
-
 /* ============================================================
 ACCESSIBILITY IMPROVEMENTS
 ============================================================ */
@@ -125,19 +118,18 @@ text-decoration: none;
 opacity: 0;
 pointer-events: none;
 }
-.skip-link:focus-visible { 
-    top: 0; 
-    opacity: 1;
-    pointer-events: auto;
+.skip-link:focus-visible {
+top: 0;
+opacity: 1;
+pointer-events: auto;
 }
 *:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 3px;
+outline: 2px solid var(--gold);
+outline-offset: 3px;
 }
 .info-card-text, .menu-item-desc, .card-desc {
-  font-size: 0.82rem !important;
+font-size: 0.82rem !important;
 }
-
 /* ============================================================
 MOUSE GLOW
 ============================================================ */
@@ -155,7 +147,6 @@ opacity: 0;
 will-change: transform, opacity;
 }
 #mouse-glow.visible { opacity: 1; }
-
 /* ============================================================
 PAGE WRAPPER
 ============================================================ */
@@ -172,7 +163,6 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 }
-
 /* ============================================================
 WELCOME PAGE
 ============================================================ */
@@ -221,7 +211,6 @@ animation: auroraFlow2 30s ease-in-out infinite alternate-reverse;
 [data-theme="light"] .welcome-aurora { background-color: #f8f5ec; }
 [data-theme="light"] .welcome-aurora::before { background: radial-gradient(circle, rgba(166, 131, 61, 0.12) 0%, transparent 60%); }
 [data-theme="light"] .welcome-aurora::after { background: radial-gradient(circle, rgba(140, 98, 57, 0.1) 0%, transparent 60%); }
-
 .welcome-particles {
 position: absolute;
 inset: 0;
@@ -246,7 +235,6 @@ animation-delay: var(--delay, 0s);
 90% { opacity: 0.08; }
 100% { transform: translateY(-220px) translateX(-30px) scale(0.6); opacity: 0; }
 }
-
 .welcome-top-bar {
 position: fixed;
 top: 0;
@@ -335,7 +323,6 @@ font-family: inherit;
 .welcome-top-bar .lang-option:hover { background: rgba(201, 169, 97, 0.1); color: var(--gold); }
 .welcome-top-bar .lang-option.active { color: var(--gold); font-weight: 600; background: rgba(201, 169, 97, 0.08); }
 .welcome-top-bar .lang-flag { font-size: 1.1rem; }
-
 .welcome-ornament {
 display: flex;
 align-items: center;
@@ -597,7 +584,6 @@ animation: fadeInUp 1s ease 1.6s forwards;
 width: 100%;
 }
 .welcome-footer .gold { color: var(--gold); font-weight: 600; }
-
 /* ============================================================
 MAIN SITE
 ============================================================ */
@@ -609,7 +595,6 @@ min-height: 100vh;
 background-color: var(--bg);
 }
 #mainSite.active { display: flex; }
-
 .hero {
 text-align: center;
 padding: 80px 24px 60px;
@@ -646,7 +631,6 @@ animation: auroraFlow2 30s ease-in-out infinite alternate-reverse;
 }
 [data-theme="light"] .hero-bg::before { background: radial-gradient(circle, rgba(166, 131, 61, 0.15) 0%, transparent 60%); }
 [data-theme="light"] .hero-bg::after { background: radial-gradient(circle, rgba(140, 98, 57, 0.1) 0%, transparent 60%); }
-
 .hero-particles {
 position: absolute;
 inset: 0;
@@ -744,7 +728,6 @@ z-index: 1;
 from { opacity: 0; transform: translateY(20px); }
 to { opacity: 1; transform: translateY(0); }
 }
-
 .logo-bar {
 display: flex;
 align-items: center;
@@ -760,91 +743,87 @@ backdrop-filter: blur(20px);
 }
 .logo-slot { display: flex; align-items: center; gap: 14px; cursor: pointer; transition: opacity 0.3s ease; }
 .logo-slot:hover { opacity: 0.85; }
-
 /* --- NEW LOGO GLOW EFFECT FOR MENU PAGE --- */
 .logo-mark {
-    width: 46px; height: 46px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
-    position: relative;
-    border: 1.5px solid var(--gold);
-    box-shadow: 0 0 15px rgba(201, 169, 97, 0.3), inset 0 0 8px rgba(201, 169, 97, 0.1);
-    animation: menuLogoPulse 3s ease-in-out infinite;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+width: 46px; height: 46px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+position: relative;
+border: 1.5px solid var(--gold);
+box-shadow: 0 0 15px rgba(201, 169, 97, 0.3), inset 0 0 8px rgba(201, 169, 97, 0.1);
+animation: menuLogoPulse 3s ease-in-out infinite;
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .logo-mark img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; position: relative; z-index: 1; }
 .logo-mark::after {
-    content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), rgba(201, 169, 97, 0.6), transparent);
-    transform: skewX(-25deg);
-    animation: shimmerSweep 3.5s ease-in-out infinite;
-    z-index: 2; pointer-events: none;
+content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), rgba(201, 169, 97, 0.6), transparent);
+transform: skewX(-25deg);
+animation: shimmerSweep 3.5s ease-in-out infinite;
+z-index: 2; pointer-events: none;
 }
 .logo-mark:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(201, 169, 97, 0.6), inset 0 0 15px rgba(201, 169, 97, 0.3);
-    border-color: var(--gold-light);
+transform: scale(1.1);
+box-shadow: 0 0 25px rgba(201, 169, 97, 0.6), inset 0 0 15px rgba(201, 169, 97, 0.3);
+border-color: var(--gold-light);
 }
 @keyframes menuLogoPulse {
-    0%, 100% { box-shadow: 0 0 15px rgba(201, 169, 97, 0.3), inset 0 0 8px rgba(201, 169, 97, 0.1); }
-    50% { box-shadow: 0 0 25px rgba(201, 169, 97, 0.5), inset 0 0 12px rgba(201, 169, 97, 0.2); }
+0%, 100% { box-shadow: 0 0 15px rgba(201, 169, 97, 0.3), inset 0 0 8px rgba(201, 169, 97, 0.1); }
+50% { box-shadow: 0 0 25px rgba(201, 169, 97, 0.5), inset 0 0 12px rgba(201, 169, 97, 0.2); }
 }
-
 .logo-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; font-style: italic; color: var(--cream); line-height: 1; }
 .logo-tagline { font-size: 0.6rem; color: var(--gold); letter-spacing: 0.25em; text-transform: uppercase; margin-top: 3px; }
-
 /* --- HEADER SEARCH (ENLARGED 25%) --- */
 .header-search {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 0 12px;
-  margin: 0 16px;
-  transition: all 0.3s ease;
-  max-width: 225px; /* was 180px, increased by 25% */
+display: flex;
+align-items: center;
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid var(--border);
+border-radius: 24px;
+padding: 0 12px;
+margin: 0 16px;
+transition: all 0.3s ease;
+max-width: 225px;
 }
 .header-search:focus-within {
-  border-color: var(--gold);
-  background: rgba(201, 169, 97, 0.05);
-  max-width: 275px; /* was 220px, increased by 25% */
+border-color: var(--gold);
+background: rgba(201, 169, 97, 0.05);
+max-width: 275px;
 }
 .search-input-header {
-  background: transparent;
-  border: none;
-  color: var(--cream);
-  font-family: inherit;
-  font-size: 0.85rem;
-  padding: 8px 4px;
-  width: 100%;
-  outline: none;
+background: transparent;
+border: none;
+color: var(--cream);
+font-family: inherit;
+font-size: 0.85rem;
+padding: 8px 4px;
+width: 100%;
+outline: none;
 }
 .search-input-header::placeholder {
-  color: var(--cream-dim);
+color: var(--cream-dim);
 }
 .search-icon-header {
-  width: 16px;
-  height: 16px;
-  color: var(--gold);
-  flex-shrink: 0;
+width: 16px;
+height: 16px;
+color: var(--gold);
+flex-shrink: 0;
 }
 @media (max-width: 768px) {
-  .header-search {
-    max-width: 150px; /* was 120px, increased by 25% */
-    margin: 0 8px;
-  }
-  .header-search:focus-within {
-    max-width: 200px; /* was 160px, increased by 25% */
-  }
+.header-search {
+max-width: 150px;
+margin: 0 8px;
+}
+.header-search:focus-within {
+max-width: 200px;
+}
 }
 @media (max-width: 480px) {
-  .header-search {
-    max-width: 125px; /* was 100px, increased by 25% */
-  }
-  .search-input-header {
-    font-size: 0.75rem;
-  }
+.header-search {
+max-width: 125px;
 }
-
+.search-input-header {
+font-size: 0.75rem;
+}
+}
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .icon-btn {
 width: 42px; height: 42px; background: transparent; border: 1px solid var(--border); border-radius: 50%;
@@ -881,7 +860,6 @@ color: var(--cream); font-size: 0.85rem; cursor: pointer; border-radius: 10px; t
 .lang-option:hover { background: rgba(201, 169, 97, 0.1); color: var(--gold); }
 .lang-option.active { color: var(--gold); font-weight: 600; background: rgba(201, 169, 97, 0.08); }
 .lang-flag { font-size: 1.1rem; }
-
 .nav-wrapper {
 position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 99; width: 92%; max-width: 420px;
 background: var(--nav-bg); border: 1px solid var(--border-glow); border-radius: 30px; padding: 8px;
@@ -895,17 +873,12 @@ box-shadow: 0 15px 50px var(--shadow-color); backdrop-filter: blur(25px);
 .nav-tab.active::before { transform: scale(1); }
 .tab-icon { display: flex; align-items: center; }
 .tab-icon svg { width: 16px; height: 16px; }
-
 .main-content { max-width: 1200px; margin: 0 auto; padding: 0 20px 140px; position: relative; z-index: 1; }
 .menu-section { display: none; padding-top: 40px; }
 .menu-section.active { display: block; animation: fadeUp 0.6s ease forwards; }
 .section-header { text-align: center; margin-bottom: 40px; }
-.section-eyebrow { font-size: 0.7rem; letter-spacing: 0.35em; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; font-weight: 500; }
 .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 300; font-style: italic; color: var(--cream); margin-bottom: 14px; }
-.section-desc { color: var(--cream-dim); font-weight: 300; font-style: italic; max-width: 500px; margin: 0 auto; line-height: 1.7; }
-
 .hidden-item { display: none !important; }
-
 .cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 60px; }
 .card {
 background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
@@ -959,7 +932,6 @@ box-shadow: 0 4px 20px var(--shadow-gold); border-color: var(--gold);
 .card-body { padding: 20px 18px 22px; flex: 1; display: flex; flex-direction: column; }
 .card-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--cream); margin-bottom: 10px; line-height: 1.2; }
 .card-desc { color: var(--cream-dim); font-weight: 300; line-height: 1.6; margin-bottom: 18px; flex: 1; }
-
 .card-price { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--gold); line-height: 1.3; margin-bottom: 18px; }
 .card-price small { font-size: 0.65rem; color: var(--cream-dim); font-family: 'Inter', sans-serif; font-weight: 400; margin-left: 3px; }
 [dir="rtl"] .card-price small { margin-left: 0; margin-right: 3px; }
@@ -977,7 +949,6 @@ background: rgba(201, 169, 97, 0.05); border: 1px solid var(--border-glow); colo
 .btn-details:hover::before { opacity: 1; }
 .btn-details:hover span, .btn-details:hover .btn-arrow { color: #0a0e17; }
 .btn-details:hover .btn-arrow { transform: translateX(5px); }
-
 .menu-list {
 background: var(--menu-list-bg); border: 1px solid var(--border); border-top: 1px solid rgba(255,255,255,0.1);
 border-radius: 20px; padding: 28px 24px; margin-bottom: 40px;
@@ -1051,7 +1022,6 @@ background: rgba(201, 169, 97, 0.1); color: var(--gold); display: flex; align-it
 justify-content: center; cursor: pointer; transition: all 0.2s; flex-shrink: 0;
 }
 .menu-item-add:hover { background: var(--gold); color: #0a0e17; transform: scale(1.1); }
-
 .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: 1000; align-items: center; justify-content: center; padding: 20px; opacity: 0; transition: opacity 0.4s ease; backdrop-filter: blur(8px); }
 .modal-overlay.open { display: flex; }
 .modal-overlay.fade-in { opacity: 1; }
@@ -1083,7 +1053,6 @@ box-shadow: 0 30px 80px var(--shadow-color); backdrop-filter: blur(24px) saturat
 .modal-actions { display: flex; gap: 12px; margin-top: 28px; }
 .btn-modal-close { flex: 1; padding: 16px; background: rgba(201, 169, 97, 0.1); border: 1px solid var(--border-glow); border-radius: 12px; color: var(--gold); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; font-family: inherit; }
 .btn-modal-close:hover { background: var(--gold); color: #0a0e17; border-color: var(--gold); }
-
 .cart-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1001; opacity: 0; visibility: hidden; transition: all 0.3s ease; backdrop-filter: blur(4px); }
 .cart-overlay.open { opacity: 1; visibility: visible; }
 .cart-panel {
@@ -1118,7 +1087,6 @@ border: none; border-radius: 12px; color: #0a0e17; font-weight: 700; font-size: 
 letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease;
 }
 .btn-checkout:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--shadow-gold); }
-
 .payment-methods { margin-top: 20px; display: flex; flex-direction: column; gap: 16px; }
 .payment-method {
 background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
@@ -1139,7 +1107,6 @@ color: var(--gold); margin: 20px 0;
 .payment-details { display: none; margin-top: 16px; }
 .payment-details.active { display: block; }
 .payment-detail-text { color: var(--cream-dim); font-size: 0.95rem; line-height: 1.6; }
-
 .toast {
 position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(20px);
 background: var(--gold); color: #0a0e17; padding: 12px 24px; border-radius: 30px;
@@ -1147,14 +1114,12 @@ font-weight: 600; font-size: 0.85rem; opacity: 0; transition: all 0.3s ease;
 z-index: 2000; pointer-events: none; box-shadow: 0 8px 24px var(--shadow-gold);
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-
 .site-footer { border-top: 1px solid var(--border); padding: 70px 24px 160px; text-align: center; background: var(--bg); position: relative; z-index: 1; }
 [data-theme="light"] .site-footer { background: var(--bg); }
 .footer-ornament { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 24px; }
 .footer-ornament-line { width: 60px; height: 1px; background: linear-gradient(to right, transparent, var(--gold)); }
 .footer-ornament-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); }
 .footer-owner { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 300; font-style: italic; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 24px; animation: shimmerText 5s linear infinite; }
-
 /* --- NEW ELEGANT FOOTER BUTTON --- */
 .footer-contact-btn {
 display: inline-flex; align-items: center; gap: 10px;
@@ -1174,15 +1139,12 @@ transform: translateY(-2px);
 .footer-contact-btn:hover svg { transform: scale(1.15); }
 [data-theme="light"] .footer-contact-btn { background: rgba(0, 0, 0, 0.02); }
 [data-theme="light"] .footer-contact-btn:hover { background: rgba(166, 131, 61, 0.08); }
-
 .footer-info { color: var(--cream-dim); font-size: 0.75rem; opacity: 0.6; margin-top: 16px; }
-
 .back-to-top { position: fixed; bottom: 110px; right: 24px; width: 48px; height: 48px; background: var(--nav-bg); border: 1px solid var(--border-glow); border-radius: 50%; color: var(--gold); cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.4s ease; z-index: 98; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px var(--shadow-color); backdrop-filter: blur(15px); }
 [dir="rtl"] .back-to-top { right: auto; left: 24px; }
 .back-to-top.visible { opacity: 1; visibility: visible; }
 .back-to-top:hover { background: var(--gold); color: #0a0e17; transform: translateY(-4px); box-shadow: 0 12px 30px var(--shadow-gold); }
 .back-to-top svg { width: 18px; height: 18px; }
-
 @media (max-width: 480px) {
 .logo-bar { padding: 12px 16px; }
 .logo-name { font-size: 1.1rem; }
@@ -1221,7 +1183,6 @@ transform: translateY(-2px);
 }
 @media (min-width: 768px) { .cards-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; } .card-media { height: 260px; } }
 @media (min-width: 1024px) { .cards-grid { grid-template-columns: repeat(4, 1fr); } }
-
 @keyframes fadeInUp {
 from { opacity: 0; transform: translateY(30px); }
 to { opacity: 1; transform: translateY(0); }
@@ -1231,10 +1192,8 @@ to { opacity: 1; transform: translateY(0); }
 <body>
 <!-- Skip Link for Accessibility -->
 <a href="#mainSite" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
-
 <!-- ====== MOUSE GLOW ====== -->
 <div id="mouse-glow"></div>
-
 <!-- ============================================================
 PAGE DE BIENVENUE (الترحيب)
 ============================================================ -->
@@ -1288,7 +1247,7 @@ PAGE DE BIENVENUE (الترحيب)
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
 </div>
 <h3 class="info-card-title" data-i18n="card_hours_title">ساعات العمل</h3>
-<p class="info-card-text" data-i18n="card_hours_text">يومياً 12 ظ – 12 م</p>
+<p class="info-card-text" data-i18n="card_hours_text">يومياً 9 ص – 21:30</p>
 </div>
 <div class="info-card" data-tilt>
 <div class="info-card-icon">
@@ -1302,14 +1261,13 @@ PAGE DE BIENVENUE (الترحيب)
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
 </div>
 <h3 class="info-card-title" data-i18n="card_location_title">موقعنا</h3>
-<p class="info-card-text" data-i18n="card_location_text">شارع الملك فهد، الرياض</p>
+<p class="info-card-text" data-i18n="card_location_text">Rue du Clos 2, 1800 Vevey</p>
 </div>
 </div>
 <div class="welcome-footer">
-<p>© 2024 <span class="gold">Softra</span>. <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
+<p>© kasrpx</p>
 </div>
 </div>
-
 <!-- ============================================================
 MAIN SITE (القائمة الرئيسية)
 ============================================================ -->
@@ -1324,13 +1282,11 @@ MAIN SITE (القائمة الرئيسية)
 <div class="logo-tagline" data-i18n="logo_tagline">Fine Dining</div>
 </div>
 </div>
-
 <!-- HEADER SEARCH (ENLARGED) -->
 <div class="header-search">
-  <svg class="search-icon-header" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-  <input type="text" id="menuSearch" class="search-input-header" data-i18n-placeholder="search_placeholder" placeholder="ابحث..." aria-label="Search menu" />
+<svg class="search-icon-header" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input type="text" id="menuSearch" class="search-input-header" data-i18n-placeholder="search_placeholder" placeholder="ابحث..." aria-label="Search menu" />
 </div>
-
 <div class="header-actions">
 <button class="icon-btn theme-toggle" id="mainThemeToggle" aria-label="Theme">
 <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -1355,7 +1311,6 @@ MAIN SITE (القائمة الرئيسية)
 </div>
 </div>
 </header>
-
 <section class="hero">
 <div class="hero-bg"></div>
 <div class="hero-particles" id="heroParticles"></div>
@@ -1368,38 +1323,28 @@ MAIN SITE (القائمة الرئيسية)
 <h1 class="hero-title" data-i18n="hero_title">Notre <span>Carte</span></h1>
 <p class="hero-subtitle" data-i18n="hero_subtitle">Une expérience culinaire raffinée où la tradition turque rencontre l'élégance contemporaine</p>
 </section>
-
 <main class="main-content">
 <section class="menu-section active" id="meals">
 <div class="section-header">
-<p class="section-eyebrow" data-i18n="meals_eyebrow">Cuisine turque authentique</p>
 <h2 class="section-title" data-i18n="meals_title">Nos Plats</h2>
-<p class="section-desc" data-i18n="section_desc">Sélection du chef — Produits frais et de saison</p>
 </div>
 <div class="cards-grid" id="meals-with-images"></div>
 <div class="menu-list" id="meals-text-list"></div>
 </section>
-
 <section class="menu-section" id="desserts">
 <div class="section-header">
-<p class="section-eyebrow" data-i18n="desserts_eyebrow">Douceurs & Gourmandises</p>
 <h2 class="section-title" data-i18n="desserts_title">Nos Desserts</h2>
-<p class="section-desc" data-i18n="section_desc_desserts">Pâtisseries artisanales — La touche finale parfaite</p>
 </div>
 <div class="cards-grid" id="desserts-grid"></div>
 </section>
-
 <section class="menu-section" id="drinks">
 <div class="section-header">
-<p class="section-eyebrow" data-i18n="drinks_eyebrow">Sélection de Boissons</p>
 <h2 class="section-title" data-i18n="drinks_title">Nos Boissons</h2>
-<p class="section-desc" data-i18n="section_desc_drinks">Boissons fraîches et chaudes — Accords parfaits</p>
 </div>
 <div class="cards-grid" id="drinks-with-images"></div>
 <div class="menu-list" id="drinks-text-list"></div>
 </section>
 </main>
-
 <footer class="site-footer">
 <div class="footer-ornament">
 <div class="footer-ornament-line"></div>
@@ -1407,19 +1352,15 @@ MAIN SITE (القائمة الرئيسية)
 <div class="footer-ornament-line"></div>
 </div>
 <div class="footer-owner" data-i18n="footer_owner">L'EXCELLENCE DE LA GASTRONOMIE TURQUE</div>
-
 <button class="footer-contact-btn" id="footerWelcomeBtn" aria-label="العودة إلى صفحة الترحيب ومعلومات التواصل">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
 <span data-i18n="footer_contact_info">معلومات التواصل والحجز</span>
 </button>
-
 <div class="footer-info">©️ <span class="gold">kasrpx</span></div>
 </footer>
-
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
-
 <nav class="nav-wrapper">
 <div class="nav-tabs">
 <button class="nav-tab active" data-target="meals">
@@ -1443,7 +1384,6 @@ MAIN SITE (القائمة الرئيسية)
 </div>
 </nav>
 </div>
-
 <!-- ====== CART PANEL ====== -->
 <div class="cart-overlay" id="cartOverlay"></div>
 <div class="cart-panel" id="cartPanel">
@@ -1464,7 +1404,6 @@ MAIN SITE (القائمة الرئيسية)
 <button class="btn-checkout" id="btnCheckout" data-i18n="checkout">Payer</button>
 </div>
 </div>
-
 <!-- ====== ITEM MODAL ====== -->
 <div class="modal-overlay" id="modal">
 <div class="modal">
@@ -1493,7 +1432,6 @@ MAIN SITE (القائمة الرئيسية)
 </div>
 </div>
 </div>
-
 <!-- ====== PAYMENT MODAL ====== -->
 <div class="modal-overlay" id="paymentModal">
 <div class="modal" style="max-width: 450px;">
@@ -1538,20 +1476,17 @@ MAIN SITE (القائمة الرئيسية)
 </div>
 </div>
 </div>
-
 <!-- ====== TOAST ====== -->
 <div class="toast" id="toast"></div>
-
 <script>
 // ============================================================
 // NAVIGATION TO WELCOME PAGE FUNCTION
 // ============================================================
 function goToWelcome() {
-    document.getElementById('mainSite').classList.remove('active');
-    document.getElementById('welcomePage').classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+document.getElementById('mainSite').classList.remove('active');
+document.getElementById('welcomePage').classList.add('active');
+window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 // ============================================================
 // PARTICLES
 // ============================================================
@@ -1581,7 +1516,6 @@ container.appendChild(p);
 }
 createParticles('welcomeParticles', 15, 'particle', false);
 createParticles('heroParticles', 25, 'hero-particle', true);
-
 // ============================================================
 // MOUSE GLOW
 // ============================================================
@@ -1590,18 +1524,16 @@ const glow = document.getElementById('mouse-glow');
 let targetX = -1000, targetY = -1000;
 let currentX = -1000, currentY = -1000;
 let isVisible = false;
-
 document.addEventListener('mousemove', (e) => {
 targetX = e.clientX;
 targetY = e.clientY;
 if (!isVisible) { glow.classList.add('visible'); isVisible = true; }
 });
 document.addEventListener('mouseleave', () => { glow.classList.remove('visible'); isVisible = false; });
-
 function smoothGlow() {
 if (document.hidden) {
-    requestAnimationFrame(smoothGlow);
-    return;
+requestAnimationFrame(smoothGlow);
+return;
 }
 currentX += (targetX - currentX) * 0.08;
 currentY += (targetY - currentY) * 0.08;
@@ -1610,7 +1542,6 @@ requestAnimationFrame(smoothGlow);
 }
 smoothGlow();
 })();
-
 // ============================================================
 // RIPPLE
 // ============================================================
@@ -1629,7 +1560,6 @@ this.appendChild(ripple);
 setTimeout(() => ripple.remove(), 600);
 });
 });
-
 // ============================================================
 // 3D TILT
 // ============================================================
@@ -1646,34 +1576,27 @@ card.addEventListener('mouseleave', function() {
 this.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1)';
 });
 });
-
 // ============================================================
-// TRANSLATIONS (i18n)
+// TRANSLATIONS (i18n) - desserts_eyebrow, section_desc_desserts, drinks_eyebrow, section_desc_drinks REMOVED
 // ============================================================
 const i18n = {
 ar: {
-search_placeholder: 'ابحث في القائمة...',
+search_placeholder: 'البحث ...',
 welcome_title: 'مرحباً بكم في Softra',
 welcome_subtitle: 'تجربة طعام فاخرة حيث يلتقي التقليد التركي الأصيل بالأناقة المعاصرة. نتشرف بزيارتكم ونتطلع لتقديم أفضل تجربة ضيافة لكم.',
 btn_menu: 'عرض القائمة',
 card_hours_title: 'ساعات العمل',
-card_hours_text: 'يومياً 12 ظ – 12 م',
+card_hours_text: 'يومياً 9 ص – 21:30',
 card_phone_title: 'اتصل بنا',
 card_location_title: 'موقعنا',
-card_location_text: 'شارع الملك فهد، الرياض',
+card_location_text: 'Rue du Clos 2, 1800 Vevey',
 footer_rights: 'جميع الحقوق محفوظة',
 logo_tagline: "مطعم راقي",
 hero_eyebrow: "قائمة المطعم",
 hero_title: "<span>قائمتنا</span> المميزة",
 hero_subtitle: "تجربة طهي راقية حيث يلتقي التقليد التركي بالأناقة المعاصرة",
-meals_eyebrow: "المطبخ التركي الأصيل",
 meals_title: "أطباقنا",
-section_desc: "اختيار الشيف — منتجات طازجة وموسمية",
-section_desc_desserts: "حلويات حرفية — اللمسة النهائية المثالية",
-section_desc_drinks: "مشروبات باردة وساخنة — تناسقات مثالية",
-desserts_eyebrow: "حلويات ومذاقات",
 desserts_title: "حلوياتنا",
-drinks_eyebrow: "اختيار المشروبات",
 drinks_title: "مشروباتنا",
 nav_meals: "أطباق",
 nav_desserts: "حلويات",
@@ -1742,28 +1665,22 @@ item_enfant: "دجاج وبطاطس",
 var_poulet: "دجاج", var_agneau: "ضأن", var_mixte: "مشكل", var_adana: "أضنة", var_2_pers: "شخصان", var_4_pers: "4 أشخاص", var_6_pers: "6 أشخاص", var_8_pers: "8 أشخاص", var_poulet_desc: "مع بطاطس ومشروب"
 },
 fr: {
-search_placeholder: 'Rechercher dans le menu...',
+search_placeholder: 'Rechercher...',
 welcome_title: 'Bienvenue chez Softra',
 welcome_subtitle: 'Une expérience culinaire raffinée où la tradition turque authentique rencontre l\'élégance contemporaine. Nous sommes honorés de votre visite et nous nous réjouissons de vous offrir la meilleure expérience d\'hospitalité.',
 btn_menu: 'Voir le menu',
 card_hours_title: 'Heures d\'ouverture',
-card_hours_text: 'Tous les jours 12h – 00h',
+card_hours_text: 'Tous les jours 9h-21:30h',
 card_phone_title: 'Contactez-nous',
 card_location_title: 'Notre emplacement',
-card_location_text: 'Rue du Roi Fahd, Riyad',
+card_location_text: "Rue du Clos 2, 1800 Vevey",
 footer_rights: 'Tous droits réservés',
 logo_tagline: "Fine Dining",
 hero_eyebrow: "Menu du Restaurant",
 hero_title: "Notre <span>Carte</span>",
 hero_subtitle: "Une expérience culinaire raffinée où la tradition turque rencontre l'élégance contemporaine",
-meals_eyebrow: "Cuisine turque authentique",
 meals_title: "Nos Plats",
-section_desc: "Sélection du chef — Produits frais et de saison",
-section_desc_desserts: "Pâtisseries artisanales — La touche finale parfaite",
-section_desc_drinks: "Boissons fraîches et chaudes — Accords parfaits",
-desserts_eyebrow: "Douceurs & Gourmandises",
 desserts_title: "Nos Desserts",
-drinks_eyebrow: "Sélection de Boissons",
 drinks_title: "Nos Boissons",
 nav_meals: "Plats",
 nav_desserts: "Desserts",
@@ -1837,23 +1754,17 @@ welcome_title: 'Welcome to Softra',
 welcome_subtitle: 'A refined culinary experience where authentic Turkish tradition meets contemporary elegance. We are honored by your visit and look forward to offering you the best hospitality experience.',
 btn_menu: 'View Menu',
 card_hours_title: 'Opening Hours',
-card_hours_text: 'Daily 12 PM – 12 AM',
+card_hours_text: 'Daily 9 AM – 9:30 PM',
 card_phone_title: 'Call Us',
 card_location_title: 'Location',
-card_location_text: 'King Fahd Street, Riyadh',
+card_location_text: 'Rue du Clos 2, 1800 Vevey',
 footer_rights: 'All rights reserved',
 logo_tagline: "Fine Dining",
 hero_eyebrow: "Restaurant Menu",
 hero_title: "Our <span>Menu</span>",
 hero_subtitle: "A refined culinary experience where Turkish tradition meets contemporary elegance",
-meals_eyebrow: "Authentic Turkish Cuisine",
 meals_title: "Our Dishes",
-section_desc: "Chef's selection — Fresh and seasonal products",
-section_desc_desserts: "Artisan pastries — The perfect finishing touch",
-section_desc_drinks: "Fresh and hot beverages — Perfect pairings",
-desserts_eyebrow: "Sweets & Delights",
 desserts_title: "Our Desserts",
-drinks_eyebrow: "Drink Selection",
 drinks_title: "Our Drinks",
 nav_meals: "Dishes",
 nav_desserts: "Desserts",
@@ -1927,23 +1838,17 @@ welcome_title: 'Softra\'ya Hoş Geldiniz',
 welcome_subtitle: 'Otantik Türk geleneğinin çağdaş zarafetle buluştuğu enfes bir yemek deneyimi. Ziyaretinizden onur duyuyoruz ve size en iyi misafirperverlik deneyimini sunmayı dört gözle bekliyoruz.',
 btn_menu: 'Menüyü Görüntüle',
 card_hours_title: 'Çalışma Saatleri',
-card_hours_text: 'Her gün 12:00 – 00:00',
+card_hours_text: 'Her gün 9 – 21:30',
 card_phone_title: 'Bizi Arayın',
 card_location_title: 'Konumumuz',
-card_location_text: 'Kral Fahd Caddesi, Riyad',
+card_location_text: 'Rue du Clos 2, 1800 Vevey',
 footer_rights: 'Tüm hakları saklıdır',
 logo_tagline: "Fine Dining",
 hero_eyebrow: "Restoran Menüsü",
 hero_title: "Bizim <span>Menümüz</span>",
 hero_subtitle: "Türk geleneğinin çağdaş zarafetle buluştuğu rafine bir yemek deneyimi",
-meals_eyebrow: "Otantik Türk Mutfağı",
 meals_title: "Yemeklerimiz",
-section_desc: "Şefin seçimi — Taze ve mevsimlik ürünler",
-section_desc_desserts: "El yapımı tatlılar — Mükemmel son dokunuş",
-section_desc_drinks: "Soğuk ve sıcak içecekler — Mükemmel eşleşmeler",
-desserts_eyebrow: "Tatlılar ve Lezzetler",
 desserts_title: "Tatlılarımız",
-drinks_eyebrow: "İçecek Seçimi",
 drinks_title: "İçeceklerimiz",
 nav_meals: "Yemekler",
 nav_desserts: "Tatlılar",
@@ -2012,7 +1917,6 @@ item_enfant: "Tavuk, patates",
 var_poulet: "Tavuk", var_agneau: "Kuzu", var_mixte: "Karışık", var_adana: "Adana", var_2_pers: "2 kişi", var_4_pers: "4 kişi", var_6_pers: "6 kişi", var_8_pers: "8 kişi", var_poulet_desc: "Patates ve içecek ile"
 }
 };
-
 let currentLang = localStorage.getItem('softra-lang') || 'fr';
 function t(key) {
 return (i18n[currentLang] && i18n[currentLang][key]) || (i18n.fr[key]) || key;
@@ -2027,19 +1931,18 @@ const translation = t(el.getAttribute('data-i18n'));
 if (translation) el.innerHTML = translation;
 });
 document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
+el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
 });
 document.querySelectorAll('.lang-option').forEach(opt => {
 opt.classList.toggle('active', opt.dataset.lang === lang);
 });
 const logoSlot = document.querySelector('.logo-slot');
 if(logoSlot) {
-    logoSlot.title = currentLang === 'ar' ? 'العودة إلى الصفحة الرئيسية' : (currentLang === 'fr' ? 'Retour à l\'accueil' : (currentLang === 'tr' ? 'Ana sayfaya dön' : 'Return to Home'));
+logoSlot.title = currentLang === 'ar' ? 'العودة إلى الصفحة الرئيسية' : (currentLang === 'fr' ? 'Retour à l\'accueil' : (currentLang === 'tr' ? 'Ana sayfaya dön' : 'Return to Home'));
 }
 renderAll();
 updateCartUI();
 }
-
 // ============================================================
 // THEME TOGGLE
 // ============================================================
@@ -2067,7 +1970,6 @@ applyTheme(getInitialTheme());
 if (welcomeThemeToggle) welcomeThemeToggle.addEventListener('click', toggleTheme);
 if (mainThemeToggle) mainThemeToggle.addEventListener('click', toggleTheme);
 })();
-
 // ============================================================
 // LANGUAGE SELECTOR
 // ============================================================
@@ -2092,7 +1994,6 @@ dropdown.classList.remove('open');
 setupSelector(welcomeLangBtn, welcomeLangDropdown);
 setupSelector(mainLangBtn, mainLangDropdown);
 })();
-
 // ============================================================
 // ENTER SITE & SESSION STORAGE
 // ============================================================
@@ -2102,27 +2003,23 @@ document.getElementById('welcomePage').classList.remove('active');
 document.getElementById('mainSite').classList.add('active');
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
 // ============================================================
 // CART LOGIC & LOCALSTORAGE PERSISTENCE
 // ============================================================
 let cart = [];
-
 function saveCart() {
-  localStorage.setItem('softra-cart', JSON.stringify(cart));
+localStorage.setItem('softra-cart', JSON.stringify(cart));
 }
-
 function loadCart() {
-  const saved = localStorage.getItem('softra-cart');
-  if (saved) {
-      try {
-          cart = JSON.parse(saved);
-      } catch(e) {
-          cart = [];
-      }
-  }
+const saved = localStorage.getItem('softra-cart');
+if (saved) {
+try {
+cart = JSON.parse(saved);
+} catch(e) {
+cart = [];
 }
-
+}
+}
 function addToCart(id, name, price, variantName = '') {
 const existing = cart.find(item => item.id === id);
 if (existing) { existing.quantity++; }
@@ -2131,14 +2028,12 @@ saveCart();
 updateCartUI();
 showToast(t('added_to_cart'));
 }
-
 function updateQuantity(index, delta) {
 cart[index].quantity += delta;
 if (cart[index].quantity <= 0) cart.splice(index, 1);
 saveCart();
 updateCartUI();
 }
-
 function updateCartUI() {
 const badge = document.getElementById('cartBadge');
 const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -2171,21 +2066,18 @@ const qrData = `twint://pay?amount=${total.toFixed(2)}&merchant=Softra`;
 const qrImg = document.getElementById('twintQrImg');
 if (qrImg) qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrData)}&size=200x200&bgcolor=ffffff&color=000000`;
 }
-
 function toggleCart(show) {
 const panel = document.getElementById('cartPanel');
 const overlay = document.getElementById('cartOverlay');
 if (show) { panel.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
 else { panel.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
 }
-
 function showToast(message) {
 const toast = document.getElementById('toast');
 toast.textContent = message;
 toast.classList.add('show');
 setTimeout(() => toast.classList.remove('show'), 2000);
 }
-
 document.getElementById('cartToggle').addEventListener('click', () => toggleCart(true));
 document.getElementById('cartClose').addEventListener('click', () => toggleCart(false));
 document.getElementById('cartOverlay').addEventListener('click', () => toggleCart(false));
@@ -2193,7 +2085,6 @@ document.getElementById('cartItems').addEventListener('click', function(e) {
 const qtyBtn = e.target.closest('.cart-qty-btn');
 if (qtyBtn) updateQuantity(parseInt(qtyBtn.dataset.index), parseInt(qtyBtn.dataset.delta));
 });
-
 document.getElementById('btnCheckout').addEventListener('click', () => {
 if (cart.length === 0) return;
 toggleCart(false);
@@ -2202,7 +2093,6 @@ paymentModal.classList.add('open');
 requestAnimationFrame(() => requestAnimationFrame(() => paymentModal.classList.add('fade-in')));
 updateCartUI();
 });
-
 document.querySelectorAll('.payment-method').forEach(method => {
 method.addEventListener('click', function() {
 document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('active'));
@@ -2212,7 +2102,6 @@ const detailsEl = document.getElementById(this.dataset.method + 'Details');
 if (detailsEl) detailsEl.classList.add('active');
 });
 });
-
 document.getElementById('paymentClose').addEventListener('click', () => {
 document.getElementById('paymentModal').classList.remove('fade-in');
 setTimeout(() => document.getElementById('paymentModal').classList.remove('open'), 400);
@@ -2230,7 +2119,6 @@ updateCartUI();
 document.getElementById('paymentModal').classList.remove('fade-in');
 setTimeout(() => document.getElementById('paymentModal').classList.remove('open'), 400);
 });
-
 // ============================================================
 // MENU DATA & RENDERING
 // ============================================================
@@ -2293,17 +2181,15 @@ var dessertsData = [
 { i18nName: 'dessert_revani', i18nDesc: 'dessert_revani_desc', price: '5.00', image: 'https://i.ibb.co/Fk1SGLmJ/images.jpg', i18nCat: 'cat_gateau' },
 { i18nName: 'dessert_tiramisu', i18nDesc: 'dessert_tiramisu_desc', price: '6.90', image: 'https://i.ibb.co/99v6c9fp/images.jpg', i18nCat: 'cat_italien' }
 ];
-
 // Intersection Observer for Cards
 const cardObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-        }
-    });
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('is-visible');
+observer.unobserve(entry.target);
+}
+});
 }, { threshold: 0.1, rootMargin: '50px' });
-
 function renderCardsWithImages(containerId, data, type) {
 var container = document.getElementById(containerId);
 if (!container) return;
@@ -2316,7 +2202,6 @@ var priceText = item.variants ? item.variants.map(v => {
 var variantName = v.i18n ? t(v.i18n) : '';
 return (variantName ? `${variantName} ${v.price}` : `${v.price}`) + '<small> CHF</small>';
 }).join('<br>') : `${item.price}<small> CHF</small>`;
-
 html += `<div class="card" data-index="${index}" data-type="${type}">
 <div class="card-media" data-action="modal">
 <span class="card-category">${category}</span>
@@ -2339,7 +2224,6 @@ ${desc ? `<p class="card-desc">${desc}</p>` : ''}
 });
 container.innerHTML = html;
 container.querySelectorAll('.card').forEach(card => cardObserver.observe(card));
-
 container.querySelectorAll('[data-action="modal"]').forEach(el => {
 el.addEventListener('click', function(e) {
 e.stopPropagation();
@@ -2351,7 +2235,6 @@ else if (type === 'drinks') openDrinkModal(index);
 });
 });
 }
-
 function renderMenuList(containerId, data) {
 var container = document.getElementById(containerId);
 if (!container) return;
@@ -2376,7 +2259,6 @@ ${item.i18nDesc ? `<div class="menu-item-desc">${t(item.i18nDesc)}</div>` : ''}
 container.innerHTML = html;
 addParticlesToMenuList(container);
 }
-
 function addParticlesToMenuList(container) {
 const existingGlow = container.querySelector('.menu-list-border-glow');
 if (!existingGlow) {
@@ -2399,7 +2281,6 @@ particle.style.height = particle.style.width;
 container.appendChild(particle);
 }
 }
-
 function renderDesserts() {
 var container = document.getElementById('desserts-grid');
 if (!container) return;
@@ -2408,7 +2289,6 @@ dessertsData.forEach((item, index) => {
 var name = item.i18nName ? t(item.i18nName) : '';
 var desc = item.i18nDesc ? t(item.i18nDesc) : '';
 var category = item.i18nCat ? t(item.i18nCat) : '';
-
 html += `<div class="card" data-dessert-index="${index}">
 <div class="card-media" data-action="dessert-modal">
 <span class="card-category">${category}</span>
@@ -2438,7 +2318,6 @@ openDessertModal(parseInt(this.closest('.card').dataset.dessertIndex));
 });
 });
 }
-
 function renderAll() {
 renderCardsWithImages('meals-with-images', mealsWithImages, 'meals');
 renderMenuList('meals-text-list', mealsTextList);
@@ -2446,7 +2325,6 @@ renderCardsWithImages('drinks-with-images', drinksWithImages, 'drinks');
 renderMenuList('drinks-text-list', drinksTextList);
 renderDesserts();
 }
-
 // ============================================================
 // NAVIGATION TABS
 // ============================================================
@@ -2460,7 +2338,6 @@ document.getElementById(this.dataset.target).classList.add('active');
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 });
-
 // ============================================================
 // MODAL LOGIC
 // ============================================================
@@ -2472,7 +2349,6 @@ var modalPric = document.getElementById('modal-price');
 var modalDesc = document.getElementById('modal-desc');
 var modalVariantSelector = document.getElementById('modal-variant-selector');
 var modalVariantSelect = document.getElementById('modal-variant-select');
-
 function openCardModal(index) {
 var item = mealsWithImages[index]; if (!item) return;
 modalImg.src = item.image; modalImg.alt = item.i18nName ? t(item.i18nName) : '';
@@ -2512,7 +2388,6 @@ closeModal();
 };
 showModal();
 }
-
 function openDrinkModal(index) {
 var item = drinksWithImages[index]; if (!item) return;
 modalImg.src = item.image; modalImg.alt = item.i18nName ? t(item.i18nName) : '';
@@ -2528,7 +2403,6 @@ closeModal();
 };
 showModal();
 }
-
 function openDessertModal(index) {
 var item = dessertsData[index]; if (!item) return;
 modalImg.src = item.image; modalImg.alt = item.i18nName ? t(item.i18nName) : '';
@@ -2544,7 +2418,6 @@ closeModal();
 };
 showModal();
 }
-
 function showModal() {
 modal.classList.add('open');
 requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('fade-in')));
@@ -2558,7 +2431,6 @@ document.getElementById('modal-close').addEventListener('click', closeModal);
 document.getElementById('modal-close-btn').addEventListener('click', closeModal);
 modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
 // ============================================================
 // BACK TO TOP
 // ============================================================
@@ -2567,7 +2439,6 @@ var backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => { backToTop.classList.toggle('visible', window.pageYOffset > 300); });
 backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
-
 // ============================================================
 // ADD TO CART BUTTONS (Event Delegation)
 // ============================================================
@@ -2606,61 +2477,54 @@ addToCart(item.i18nName, t(item.i18nName), item.price, '');
 return;
 }
 });
-
 // ============================================================
 // SEARCH & FILTER LOGIC
 // ============================================================
 document.getElementById('menuSearch').addEventListener('input', function(e) {
-    const query = e.target.value.toLowerCase().trim();
-    document.querySelectorAll('.card').forEach(card => {
-        const text = card.textContent.toLowerCase();
-        if (query === '' || text.includes(query)) {
-            card.classList.remove('hidden-item');
-        } else {
-            card.classList.add('hidden-item');
-        }
-    });
-    document.querySelectorAll('.menu-item').forEach(item => {
-        const text = item.textContent.toLowerCase();
-        if (query === '' || text.includes(query)) {
-            item.classList.remove('hidden-item');
-        } else {
-            item.classList.add('hidden-item');
-        }
-    });
+const query = e.target.value.toLowerCase().trim();
+document.querySelectorAll('.card').forEach(card => {
+const text = card.textContent.toLowerCase();
+if (query === '' || text.includes(query)) {
+card.classList.remove('hidden-item');
+} else {
+card.classList.add('hidden-item');
+}
 });
-
+document.querySelectorAll('.menu-item').forEach(item => {
+const text = item.textContent.toLowerCase();
+if (query === '' || text.includes(query)) {
+item.classList.remove('hidden-item');
+} else {
+item.classList.add('hidden-item');
+}
+});
+});
 // ============================================================
 // INIT (Initialization)
 // ============================================================
 document.addEventListener('DOMContentLoaded', function() {
-    loadCart();
-    
-    const hasVisited = sessionStorage.getItem('softra-visited');
-    const welcomePage = document.getElementById('welcomePage');
-    const mainSite = document.getElementById('mainSite');
-    
-    if (hasVisited === 'true') {
-        welcomePage.classList.remove('active');
-        mainSite.classList.add('active');
-    } else {
-        sessionStorage.setItem('softra-visited', 'true');
-        welcomePage.classList.add('active');
-        mainSite.classList.remove('active');
-    }
-    
-    applyLanguage(currentLang);
-    updateCartUI();
-
-    const logoSlot = document.getElementById('logoSlot');
-    if (logoSlot) {
-        logoSlot.addEventListener('click', goToWelcome);
-    }
-
-    const footerWelcomeBtn = document.getElementById('footerWelcomeBtn');
-    if (footerWelcomeBtn) {
-        footerWelcomeBtn.addEventListener('click', goToWelcome);
-    }
+loadCart();
+const hasVisited = sessionStorage.getItem('softra-visited');
+const welcomePage = document.getElementById('welcomePage');
+const mainSite = document.getElementById('mainSite');
+if (hasVisited === 'true') {
+welcomePage.classList.remove('active');
+mainSite.classList.add('active');
+} else {
+sessionStorage.setItem('softra-visited', 'true');
+welcomePage.classList.add('active');
+mainSite.classList.remove('active');
+}
+applyLanguage(currentLang);
+updateCartUI();
+const logoSlot = document.getElementById('logoSlot');
+if (logoSlot) {
+logoSlot.addEventListener('click', goToWelcome);
+}
+const footerWelcomeBtn = document.getElementById('footerWelcomeBtn');
+if (footerWelcomeBtn) {
+footerWelcomeBtn.addEventListener('click', goToWelcome);
+}
 });
 </script>
 </body>
